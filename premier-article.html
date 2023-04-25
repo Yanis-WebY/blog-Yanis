@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+    <!-- Title -->
+    <title>HTML & CSS</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <!-- ICI JE COPIE A LA PLACE DE LA NAVBAR, CELLE DE LA PAGE BLOG de <nav> jusqu'à </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <!-- Brand -->
+            <!-- ajoute un lien sur ton image ici <a href=""> -->
+            <a class="navbar-brand" href="index.html">
+                <div class="avatar avatar-xxl">
+                    <!-- change ta photo ici  -->
+                    <img src="./assets/img/Paris_Saint-Germain_Logo.svg.png" alt="..." class="avatar-img rounded-circle" />
+                </div>
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapse - permet de rendre le menu responsive -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fe fe-x"></i>
+                </button>
+
+                <!-- Navigation -->
+                <ul class="navbar-nav ms-auto">
+                    <!-- copie colle ce bloc <li> si tu veux rajouter un lien dans ta navbar -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> Accueil </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> Blog </a>
+                    </li>
+                    <!-- jusque là </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> A propos de moi </a>
+                    </li>
+                </ul>
+
+                <!-- Button -->
+                <!-- mets un lien sur le bouton G404 ! -->
+                <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="https://garage404.com/" target="_blank">
+                    G404
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- IMAGE -->
+    <!-- ICI DANS LA BALISE <section> je viens modifier l'attribut style pour CHANGER L'IMAGE -->
+    <section data-jarallax data-speed=".8" class="py-12 py-md-15 bg-cover jarallax" style="background-image: url('./assets/img/pexels-luis-gomes-546819.jpg' )  ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-7 text-center">
+                    <!-- Heading -->
+                    <h1 class="display-2 fw-bold text-white">Mes premiers cours de HTML et de CSS</h1>
+
+                    <!-- Text -->
+                    <p class="lead mb-0 text-white-75"></p>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </section>
+
+    <!-- HEADER -->
+    <section class="pt-8 pt-md-11">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+                    <!-- Heading -->
+                    <h1 class="display-4 text-center">Exercice CSS</h1>
+
+                    <!-- Text -->
+                    <p class="lead mb-7 text-center text-muted">
+                        Nous voyons dans cet article comment mettre du style sur un site internet, notamment grâce au langage CSS et à ses sélecteurs.
+
+                    </p>
+
+                    <!-- Figure -->
+                    <figure class="figure mb-7">
+                        <!-- Image -->
+                        <img class="figure-img img-fluid rounded lift lift-lg" src="./assets/img/Capture-4.PNG" alt="..." />
+
+                        <!-- Caption -->
+                        <figcaption class="figure-caption text-center">
+                            <a href="https://getbootstrap.com/" target="_blank">
+                                Bootstrap</a>
+
+                        </figcaption>
+
+                    </figure>
+
+                    <!-- Meta -->
+                    <div class="row align-items-center py-5 border-top border-bottom">
+                        <div class="col-auto">
+                            <!-- Avatar -->
+                            <div class="avatar avatar-lg">
+                                <img src="./assets/img/Paris_Saint-Germain_Logo.svg.png" alt="..." class="avatar-img rounded-circle" />
+                            </div>
+                        </div>
+                        <div class="col ms-n5">
+                            <!-- Name -->
+                            <h6 class="text-uppercase mb-0">Yanis</h6>
+
+                            <!-- Date -->
+                            <time class="fs-sm text-muted" datetime="2019-05-20">
+                                Publié le 24 janvier 2023
+
+                            </time>
+                        </div>
+                        <div class="col-auto"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+                    <!-- Heading -->
+                    <h2 class="fw-bold">Découverte HTML & CSS</h2>
+                    <p>
+                        Le code HTML est le code utilisé pour structurer une page web et son contenu. Chaque élément a sa balise attribuée : par exemple pour du texte il faut la balise :
+                    </p>
+                    <ul class="mb-0">
+                        <li>
+                            Le code HTML est le code utilisé pour structurer une page web et son contenu. Chaque elements à sa balise atribué : par exemple pour du texte il faut la balise : <code> &#60;p&#62; Ceci est un paragraphe &#60;/p&#62;</code> ou pour faire un titre il faut utiliser la balise:<br><code> &#60;h2&#62; Ceci est un titre h2 &#60;/h2&#62;</code> (il y a 6 niveaux de titres).
+                        </li>
+                        <li class="mt-4">
+                            Le code CSS est le code utilisé pour mettre en forme une page web. On crée des classes ou des ID qui ont des propriétés ou valeurs CSS pour styliser des éléments HTML. Par exemple, si on veut que notre texte soit bleu, on crée une classe :<br>
+                            <code> .bleu{color:#0000FF} </code>et on l'applique à l'élément HTML désiré, par exemple:<br><code> &#60;p class="bleu"&#62; Ceci est un paragraphe &#60;/p&#62;</code>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-11 col-xl-10">
+                    <!-- Slider -->
+                    <div data-flickity='{"wrapAround": true, "pageDots": false, "imagesLoaded": true, "adaptiveHeight": true}'>
+                        <div class="w-100">
+                            <img src="./assets/img/Capture -1.PNG" width="100%" alt="..." class="img-fluid rounded" />
+                        </div>
+                        <div class="w-100">
+                            <img src="./assets/img/Capture-2.PNG" width="100%" alt="..." class="img-fluid rounded" />
+                        </div>
+                        <div class="w-100">
+                            <img src="./assets/img/Capture-3.PNG" width="100%" alt="..." class="img-fluid rounded" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+                    <!-- Heading -->
+                    <h3 class="fw-bold">https://flukeout.github.io/</h3>
+
+                    <!-- Text -->
+                    <p class="mb-7">
+                        Il s'agit d'un site pour apprendre à utiliser les sélecteurs CSS.
+                    </p>
+
+                    <!-- Divider -->
+                    <hr class="hr-md mb-7" />
+
+                    <!-- Blockquote -->
+                    <blockquote class="blockquote mb-7">
+                        <p class="h2 mb-0 text-center text-primary-desat">
+                            Voici ce que nous avons fait le 1er trimestre
+                        </p>
+                    </blockquote>
+
+                    <!-- Divider -->
+                    <hr class="hr-md mb-7" />
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </section>
+
+    <!-- SI TU N'AS RIEN D'AUTRE A RAJOUTER ESSAYE DE SUPPRIMER LA <section> de dessous Ctrl S et regarde le résultat -->
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+                    <!-- Heading -->
+                    <h3 class="fw-bold"></h3>
+
+                    <!-- Text -->
+                    <p>
+                        Pour apprendre le CSS de manière amusante, nous avons joué à : <a href="https://flukeout.github.io/" target="_blank">
+                            Diner CSS
+                        </a>, <a href="http://www.flexboxdefense.com/" target="_blank">
+                            Flexbox Defense
+                        </a>
+                        et
+                        <a href="https://flexboxfroggy.com/#fr" target="_blank">
+                            Flexbox Froggy
+                        </a>
+                    </p>
+
+                    <p>
+                        Voici les différentes outils que nous avons utilisés pour travailler et apprendre.
+                    </p>
+
+                    <!-- List -->
+                    <ul class="list-unstyled mb-7">
+                        <li class="d-flex">
+                            <!-- Check -->
+                            <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                                <i class="fe fe-check"></i>
+                            </div>
+
+                            <!-- Text -->
+                            <p>
+                                Pour apprendre le HTML et le CSS, nous avons commencé à utiliser <a href="https://codepen.io/" target="_blank">
+                                    Code Pen</a> qui est un éditeur de code en ligne .
+                            </p>
+                        </li>
+                        <li class="d-flex">
+                            <!-- Check -->
+                            <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                                <i class="fe fe-check"></i>
+                            </div>
+
+                            <!-- Text -->
+                            <p>
+                                Puis après nous avons utilisé l'éditeur <a href="https://code.visualstudio.com/" target="-blank">
+                                    VS Code </a> pour travailler en local sur notre PC, nous avons utilisé l'extension Live Server pour simuler des pages web.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+        <div class="shape shape-bottom shape-fluid-x text-light">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="py-8 py-md-11 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <!-- Brand -->
+                    <img src="./assets/img/axolotl-icone-du-bas.jpg" alt="..." class="footer-brand img-fluid mb-2" />
+
+                    <!-- Text -->
+                    <p class="text-gray-700 mb-2">Les Mécanos du Numérique.</p>
+
+                    <!-- Social -->
+                    <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+                        <li class="list-inline-item list-social-item me-3">
+                            <a href="https://www.instagram.com/yanis_maurin/" target="_blank" class="text-decoration-none">
+                                <img src="./assets/img/logo-instagrame.jfif" class="list-social-icon" alt="..." />
+                            </a>
+                        </li>
+                        <li class="list-inline-item list-social-item me-3">
+                            <a href="#!" class="text-decoration-none">
+                                <img src="./assets/img/logo-facebook.webp" class="list-social-icon" alt="..." />
+                            </a>
+                        </li>
+                        <li class="list-inline-item list-social-item me-3">
+                            <a href="#!" class="text-decoration-none">
+                                <img src="./assets/img/logo-twitter.png" class="list-social-icon" alt="..." />
+                            </a>
+                        </li>
+                        <li class="list-inline-item list-social-item">
+                            <a href="#!" class="text-decoration-none">
+                                <img src="./assets/img/logo-youtube.jpg" class="list-social-icon" alt="..." />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2"></div>
+                <div class="col-6 col-md-4 col-lg-2"></div>
+                <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0"></div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <!-- Heading -->
+                    <h6 class="fw-bold text-uppercase text-gray-700">Navigation</h6>
+
+                    <!-- List -->
+                    <ul class="list-unstyled text-muted mb-0">
+                        <li class="mb-3">
+                            <a href="index.html" class="text-reset"> Accueil </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="premier-article.html" class="text-reset">
+                                HTML et CSS
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="deuxieme-article.html" class="text-reset">
+                                Javascript
+                            </a>
+                        </li>
+                        <li>
+                            <a href="troisieme-article.html" class="text-reset">
+                                PSG
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+</body>
+
+</html>
